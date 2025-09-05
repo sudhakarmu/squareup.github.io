@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhakar Muthumani</title>
+</head>
+<style>
+    body {
+        background: #010;
+        -webkit-filter: blur(0.7px);
+        filter: blur(0.7px);
+        overflow: hidden;
+        font-family: monospace;
+    }
+    
+    .skype-call {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+    
+    .preview {
+        position: relative;
+        width: 330px;
+        height: 230px;
+        background-color: #030403;
+        -webkit-box-shadow: 0px 2px 29px 3px rgba(10, 9, 10, 1);
+        -moz-box-shadow: 0px 2px 29px 3px rgba(10, 9, 10, 1);
+        box-shadow: 0px 2px 29px 3px rgba(10, 9, 10, 1);
+    }
+    
+    .btn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #F5A623;
+        font: 13px sans-serif;
+        font-weight: bold;
+        padding: 2px 4px;
+        margin: 4px 4px;
+        border: 0;
+        outline: 0px;
+        z-index: 10;
+    }
+    
+    .circle {
+        display: inline-block;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        margin: 0px 4px 2px 0px;
+        border-radius: 50%;
+        background-color: black;
+        -webkit-animation-name: blinker;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-name: blinker;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+        animation-name: blinker;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .video {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        animation: fade 1s linear;
+        -webkit-animation: fade 1s linear;
+        -moz-animation: fade 1s linear;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+    }
+    
+    @-moz-keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+        50% {
+            opacity: 0.18;
+        }
+        100% {
+            opacity: 1.0;
+        }
+    }
+    
+    @-webkit-keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+        50% {
+            opacity: 0.18;
+        }
+        100% {
+            opacity: 1.0;
+        }
+    }
+    
+    @keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+        50% {
+            opacity: 0.18;
+        }
+        100% {
+            opacity: 1.0;
+        }
+    }
+    
+    .scanlines {
+        pointer-events: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: -webkit-linear-gradient(rgba(70, 70, 70, 0.6) 0%, transparent 25%)!important;
+        background-image: linear-gradient(to, transparent 25%)!important;
+        background-size: 1px 3px;
+    }
+    
+    .editor-text {
+        color: #9F9 !important;
+        font-size: 1em;
+        text-shadow: 1px 0px 5px #0F0, -1px 0px 2px #0F0 !important;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+
+
+<div class="perspector">
+    <pre class="element perspectiveText">
+         <code class="highlighter editor-text" data-manual><div id="console">two_step_auth_command.bui<br><br>==*=*- for agent 54348<br><br>Username: Sudhakar<br>Password: ********************<br><br><br>ACCESS TO SYSTEM GRANTED<br><br>Version 3.2654.2<br>Initializing...<br><br>
+          |\__/,|   (`\
+        _.|o o  |_   ) )
+  ---(((---(((-----------------------------------------------------
+  
+ <br>I am Sudhakar, Started working as a developer and has been leading the OWASP Thoothukudi Chapter. Wanna know more about me <a href="mailto:msudhakar724@gmail.com">Click here</a>. Want to hire me? <a href="assets/Sudhakar.pdf">Download Resume</a>
+                                 |        |
+                                 |\      /|
+                                 | \____/ |
+                                 |  /\/\  |
+                                .'___  ___`.
+                               /  \|/  \|/  \                
+              _.--------------( ____ __ _____)
+           .-' \  -. | | | | | \ ----\/---- /
+         .'\  | | / \` | | | |  `.  -'`-  .'
+        /`  ` ` '/ / \ | | | | \  `------'\
+       /-  `-------.' `-----.       -----. `---.
+      (  / | | | |  )/ | | | )/ | | | | | ) | | )
+       `._________.'_____,,,/\_______,,,,/_,,,,/  
+  ------           --       --          ---     --------------------               
+  
+       <br>/*Greetings from the internet, */<br>
+Social Media Links:
+<br>
+<a href="https://www.linkedin.com/in/sudhakarmuthumani">LinkedIn</a>
+<br><a href="https://www.instagram.com/sudhakar_._m">Instagram</a>
+<br><a href="https://twitter.com/Sudhakarmuthu04">Twitter</a>
+<br><a href="https://www.facebook.com/sudhakarmuthumani04">Facebook</a></div>
+  </code>
+  <div class='scanlines'></div>
+      </pre>
+</div>
+<script>
+    $(function() {
+
+        var text = $(".element code").html()
+
+        $(".highlighter").typed({
+            strings: [text],
+            contentType: 'html',
+            typeSpeed: -35,
+            cursorChar: '&#9608;'
+        });
+
+        var scrolltobottom = setInterval(function() {
+            window.scrollTo(0, document.body.scrollHeight)
+        }, 600);
+
+        function f() {
+            clearInterval(scrolltobottom);
+        }
+        setTimeout(f, 55000)
+    });
+</script>
+
+</html>
