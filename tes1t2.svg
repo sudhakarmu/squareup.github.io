@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-  <image href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><a href="https://attacker.example.com"><text x="10" y="20">Click</text></a></svg>' width="300" height="200"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+  <a xlink:href="https://attacker.example.com" xmlns:xlink="http://www.w3.org/1999/xlink" target="_blank">
+    <rect x="10" y="10" width="280" height="80" fill="#e0f0ff" stroke="#003366"/>
+    <text x="150" y="60" text-anchor="middle" font-size="20" fill="#003366">Click here</text>
+  </a>
 </svg>
