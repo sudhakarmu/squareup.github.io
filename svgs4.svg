@@ -1,0 +1,12 @@
+<!-- poc-foreign-form.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <foreignObject x="0" y="0" width="420" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;">
+      <form action="https://example.com/" method="GET" style="font-family:Arial,sans-serif;">
+        <label>Test: <input name="q" value="svg-test"/></label>
+        <input type="submit" value="Submit"/>
+      </form>
+    </body>
+  </foreignObject>
+</svg>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="100" width="300">
-  <a href="https://example.com" target="_blank" rel="noreferrer noopener">
-    <rect fill="#e0f0ff" height="80" stroke="#003366" width="280" x="10" y="10"/>
-    <text fill="#003366" font-size="20" text-anchor="middle" x="150" y="60">
-      Click here
-    </text>
-  </a>
-</svg>
