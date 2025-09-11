@@ -1,8 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="300" height="100">
-  <a xlink:href="https://attacker.example.com" target="_blank">
-    <rect x="10" y="10" width="280" height="80" fill="#e0f0ff" stroke="#003366"/>
-    <text x="150" y="60" text-anchor="middle" font-size="20" fill="#003366">Click here</text>
-  </a>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use xlink:href="https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/refs/heads/master/XSS%20Injection/Files/SVG_XSS_green_triangle.svg" />
 </svg>
