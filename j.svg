@@ -1,0 +1,6 @@
+<person xmlns:xlink="http://www.w3.org/1999/xlink"
+        xlink:type="locator"
+        xlink:href="students/patjones62.xml"
+        xlink:label="student62"
+        xlink:role="http://www.example.com/linkprops/student"
+        xlink:title="Pat Jones" />
